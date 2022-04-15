@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --fondoNavegadoresViejos: #00d2ff;  
+    --fondoWebkit: -webkit-linear-gradient(to right, #928DAB, #00d2ff); 
+    --Fondo: linear-gradient(to right, #928DAB, #00d2ff);
+    --borde: rgba(14, 133, 93, 0.603) solid 1px;
+    --bordeFocus:rgba(66, 120, 238, 0.781);
+}
+
+body{
+    background: var(--fondoNavegadoresViejos);
+    background: var(--fondoWebkit);
+    background: var(--Fondo);
+}
+
+h1{ text-align: center;}
+
+.div-formulario{
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px 3px rgba(14, 125, 133, 0.603);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 7%;
+}
+
+form{
+    position: relative;
+    left: 22%;
+}
+
+form p{ padding-left: 3%;}
+
+form input, form textarea{ width: 60%;}
+
+form input{ 
+    height: 6vh;
+    border: var(--borde);
+    border-radius: 25px;
+    padding-left: 1%;
+}
+
+form p{padding: 2px 0px;}
+
+form textarea{
+    height: 60px;
+    resize: none;
+    border: var(--borde);
+    border-radius: 25px;
+    padding-left: 4%;
+    height: 10vh;
+}
+
+form #boton-enviar{
+    border: var(--borde);
+    border-radius: 25px;
+    width: 15%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 2%;
+}
+
+form .input:focus{
+    border-color: var(--bordeFocus);
+}
